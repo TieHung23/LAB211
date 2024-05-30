@@ -1,0 +1,13 @@
+EQU00001 _ Dumbell _ 50kg _ 4 _ new
+EQU00100 _ Barbell _ 60kg _ 6 _ old
+EQU12011 _ Dumbell _ Zbar 20kg _ 10 _ old
+EQU00002 _ Loudspeaker _ 4kg _ 6 _ new
+EQU00006 _ Barbell _ 4kg _ 3 _ new
+EQU00102 _ Barbell _ 20kg _ 5 _ normal
+EQU12342 _ Barbell _ 10kg _ 10 _ new
+EQU00010 _ Resistance Bands _ 40kg _ 10 _ old
+EQU00003 _ Incline Chair _ 35kg _ 6 _ normal
+EQU23124 _ Decline Chair _ 10kg _ 3 _ old
+EQU24232 _ Chest Flyes _ 2kg _ 2 _ new
+EQU31231 _ Smith _ 100kg _ 1 _ old
+EQU45345 _ Squat Machine _ 3kg _ 3 _ new

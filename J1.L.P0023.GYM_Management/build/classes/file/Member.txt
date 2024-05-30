@@ -1,0 +1,13 @@
+GY12345 _ PHAM TIEN HUNG _ Tay Ninh _ 0123456789 _ VVip
+GY00001 _ Thanh Nhi _ Binh Duong _ 0967708552 _ VVip
+GY00002 _ Duc Phat _ TP HCM _ 0124365879 _ VVip
+GY00003 _ Kim Phung _ Binh Duong _ 0123456789 _ Normal
+GY00004 _ Duy Khang _ Tay Ninh _ 0123456789 _ VVip
+GY00005 _ Gia Bao _ Tay Ninh _ 0123456789 _ Normal
+GY00006 _ Bao Khanh _ Tay Ninh _ 0123456789 _ Normal
+GY00007 _ HieutQ2 _ Sai Gon _ 0123456789 _ Normal
+GY00010 _ Le Thanh W _ Ha Noi _ 0213456789 _ Normal
+GY00223 _ Minh Quan _ Binh Duong _ 0321456789 _ Vip
+GY00008 _ Chi Bao _ Long An _ 0214365879 _ Vip
+GY00011 _ Nguyen Van A _ TP HCM _ 0124367895 _ Normal
+GY00013 _ PhamHung _ dff _ 0120210341 _ VVip
