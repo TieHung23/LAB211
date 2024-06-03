@@ -5,12 +5,17 @@
  */
 package action_service;
 
+import data_obj.DAOEvent;
 import data_obj.DAOManager;
 import data_obj.IDAOEvent;
 import data_obj.IDAOManager;
 import event_obj.Event;
 import event_obj.StatusEvent;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 import main.color;
 import utils.IValidation;
 import utils.Status;
@@ -115,5 +120,40 @@ public class Service implements IService {
         } else {
             System.out.println("Cannot find");
         }
+    }
+
+    @Override
+    public void sortEvent() {
+        List<Event> subList = new ArrayList<>(event.getAllEvent());
+        Event swapEvent = new Event();
+        for (int i = 0; i < subList.size() - 1; i++) {
+            boolean swaped = false;
+            for (int j = 0; j < subList.size() - 1 - i; j++) {
+                if (subList.get(j).getDate().isAfter(subList.get(j + 1).getDate())) {
+                    Collections.swap(subList, j, j + 1);
+                    swaped = true;
+                }
+                if (subList.get(j).getDate().isEqual(subList.get(j + 1).getDate()) && sortName(subList.get(j), subList.get(j + 1)) == 1) {
+                    Collections.swap(subList, j, j + 1);
+                    swaped = true;
+                }
+            }
+            if (!swaped) {
+                break;
+            }
+        }
+        System.out.printf(color.BLACK + color.CYAN_BACKGROUND + "|%-15s|%-30s|%-30s|%-25s|%-40s|%-20S|%n" + color.RESET, "ID event", "Name", "Date", "Location", "Attendencees", "Status");
+        for (Event event : subList) {
+            System.out.printf(event.toPrint());
+        }
+    }
+
+    @Override
+    public int sortName(Event o1, Event o2) {
+        String[] nameField0 = o1.getEventName().split("\\s+");
+        String[] nameField1 = o2.getEventName().split("\\s+");
+        String lastName0 = nameField0[nameField0.length - 1];
+        String lastName1 = nameField1[nameField1.length - 1];
+        return lastName0.compareTo(lastName1);
     }
 }
