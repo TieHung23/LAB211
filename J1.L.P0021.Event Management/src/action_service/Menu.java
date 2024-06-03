@@ -83,7 +83,10 @@ public class Menu {
                     else System.out.println("Cannot save");   
                     break;
                 case 6:
+                    System.out.println("Before sort: ");
                     service.showAllEvent();
+                    System.out.println("After sort: ");
+                    service.sortEvent();
                     break;
                 default:
                     System.out.println("Good bye!");
